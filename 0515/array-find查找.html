@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <script>
+
+
+    //普通find寫法
+    const arr = ['blue', 'pink', 'black']
+    const re = arr.find(function (item) {
+      return item === 'blue'
+    })
+    // console.log(re)
+
+
+
+    //
+    const arr2 = [
+      {
+        name: '小米',
+        price: 1999
+      }, {
+        name: '華為',
+        price: 2999
+      }, {
+        name: 'Apple',
+        price: 15999
+      }
+    ]
+
+    const result = arr2.find((item) => {
+
+    })
+    //
+    const ans = arr2.find(function (item) {
+      // console.log(item.name)
+      return item.name === 'Apple'
+    })
+    //返回物件
+    console.log(ans)
+
+
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // 輸出1~10
+    // for (let i = 1; i <= 20; i++) {
+    //   document.write(i + '<br>');
+    // }
+
+
+    // 計算1~1000之間的累加和
+    // let sum = 0;
+    // let end = prompt('輸入終值');
+    // for (let j = 1; j <= end; j++) {
+    //   sum += j;
+    // }
+    // document.write(sum);
+
+    //輸出可以被6整除的數字
+    // for (let i = 100; i <= 200; i++) {
+    //   if (i % 6 !== 0) {
+    //     continue
+    //   }
+    //   document.write(i + '<br>')
+    // }
+
+    //三元運算符
+    // let num1 = prompt('num1');
+    // let num2 = prompt('num2');
+    // let result = num1 > num2 ? num1 : num2;
+    // alert(result);
+    // document.write(result);
+
+
+    //輸入數字 輸入5 輸出1~5的總和
+    // let num = prompt('輸入數字');
+    // let sum = 0;
+    // for (let i = 1; i <= num; i++) {
+    //   sum += i5
+
+    // }
+    // document.write(sum);
+
+
+    // let score = +prompt('輸入成績');
+
+
+    // if (score >= 90) {
+    //   document.write('A');
+    // } else if (score >= 80) {
+    //   document.write('B');
+    // } else if (score >= 70) {
+    //   document.write('C');
+    // } else {
+    //   document.write('D');
+    // }
+
+    // let days = prompt('Days');
+    // switch (days) {
+    //   case "星期一":
+    //     alert('Monday');
+    //     break;
+    //   case "星期二":
+    //     alert('Tuesday');
+    //     break;
+
+    //   case "星期三":
+    //     alert('Wednesday');
+    //     break;
+
+    //   case "星期四":
+    //     alert('Thursday');
+    //     break;
+
+    //   case "星期五":
+    //     alert('Friday');
+    //     break;
+
+    //   case "星期六":
+    //     alert('Saturday');
+    //     break;
+    //   case "星期天":
+    //     alert('Sunday');
+    //     break;
+
+
+    //   default:
+    //     break;
+    // }
+
+
+
+
+    let account = "Jin@test.com";
+    let passwords = "0000";
+
+
+    let eacc = prompt('輸入帳號');
+    let epwd = prompt('輸入密碼');
+
+    while (true) {
+      let eacc = prompt('輸入帳號');
+      let epwd = prompt('輸入密碼');
+      if (eacc === account && epwd === passwords) {
+        break;
+      } else {
+        alert('帳號密碼都錯誤');
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

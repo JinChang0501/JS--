@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const arr = [1, 5, 8]
+
+    // const total = arr.reduce(function (上一個參數, 現在參數) {
+    // }, 初始值)
+
+    //1.無初始值
+
+    const total = arr.reduce(function (a, b) {
+      return a + b
+    })
+
+    //2.有初始值
+    const total2 = arr.reduce(function (a, b) {
+      return a + b
+    }, 10)
+    console.log(total)
+    console.log(total2)
+    // 3.箭頭函式
+    const total3 = arr.reduce((prev, current) => {
+      return prev + current
+    }, 20)
+    console.log(total3)
+
+    // 4.在精簡箭頭函式
+    const total4 = arr.reduce((prev, current) => prev + current, 30)
+    console.log(total4)
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let power = prompt('請輸入電費');
+    let internet = prompt('請輸入網路費');
+    let water = prompt('請輸入水費');
+    let total = prompt('請輸入存款');
+    let balance = total - power - internet - water;
+
+
+
+
+    document.write(`
+    <table>
+    <tr>
+      <th>電費</th>
+      <th>網路費</th>
+      <th>水費</th>
+      <th>總額</th>
+      <th>餘額</th>
+    </tr>
+    <tr>
+      <td>${power}</td>
+      <td>${internet}</td>
+      <td>${water}</td>
+      <td>${total}</td>
+      <td>${balance}</td>
+    </tr>
+  </table>`);
+
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    const arr = [1, 2, 3, 4, 88, 6, 7, 8, 9, 10];
+    function getSum(arr) {
+      // console.log(arr);
+      let sum = 0;
+      console.log(arr[0])
+      for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+      }
+      document.write(sum);
+    }
+    getSum(arr);
+
+
+
+
+    //動態參數
+    function getSum2() {
+      let sum2 = 0;
+      for (let i = 0; i < arguments.length; i++) {
+        sum2 += arguments[i];
+      }
+      document.write(sum2)
+    }
+    getSum2(2, 3, 4, 44, 5, 35, 6,)
+  </script>
+</body>
+
+</html>

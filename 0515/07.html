@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      /* 合併相鄰邊框 */
+      border-collapse: collapse;
+      height: 80px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    th {
+      padding: 5px 30px;
+    }
+
+    table,
+    th,
+    td {
+      border: 3px solid black;
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+
+  <script>
+    let price = +prompt('請輸入價格');
+    let amount = +prompt('請輸入購買數量');
+    let address = prompt('請輸入地址');
+
+    let totalPrice = price * amount;
+
+    document.write(`  <table>
+    <tr>
+      <th>商品名稱</th>
+      <th>商品價格</th>
+      <th>商品數量</th>
+      <th>總價</th>
+      <th>地址</th>
+    </tr>
+    <tr>
+      <td>小米</td>
+      <td>${price}</td>
+      <td>${amount}</td>
+      <td>${totalPrice}</td>
+      <td>${address}</td>
+    </tr>
+  </table>
+`)
+
+
+
+
+
+  </script>
+</body>
+
+</html>

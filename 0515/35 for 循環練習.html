@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // for (let i = 1; i <= 100; i++) {
+    //   document.write(`${i}歲` + `<br>`)
+    // }
+
+
+    // let result = 0;
+
+    // for (let i = 1; i <= 100; i++) {
+    //   if (i % 2 === 0) {
+    //     result += i
+    //   } else {
+    //     continue
+    //   }
+    // }
+    // document.write(`偶數合為${result}`)
+
+
+    // for (let i = 1; i <= 5; i++) {
+    //   document.write('star')
+    // }
+
+
+    // let arr = ["馬超", "趙雲", "張飛", "劉備"];
+
+    // for (let i = 0; i < arr.length; i++) {
+    //   document.write(arr[i] + "<br>");
+    // }
+    // for (let i = 1; i <= 3; i++) {
+    //   document.write(`第${i}天<br>`);
+    //   for (let j = 1; j <= 5; j++) {
+    //     document.write(`記住了${j}個單字<br>`);
+    //   }
+    // }
+
+    // for (let a = 1; a <= 5; a++) {
+    //   document.write(`<br>`);
+    //   for (let b = 1; b <= 5; b++) {
+    //     document.write(`★`);
+    //   }
+    // }
+
+
+
+    // for (let i = 1; i <= 9; i++) {
+    //   for (let j = 1; j <= 9; j++) {
+    //     document.write(`${i} x ${j} = ${i * j}<br>`)
+    //   }
+    // }
+
+    // let num = prompt('輸入要幾列');
+    // for (let i = 1; i <= 9; i++) {
+    //   document.write('<br>')
+    //   for (let j = 1; j <= i; j++) {
+    //     document.write(`${j} x ${i} = ${i * j} `)
+    //   }
+    // }
+
+    // let arr = ["馬超", "趙雲", "張飛", "劉備"];
+
+    // for (let i = 0; i < arr.length; i++) {
+    //   document.write(arr[i]);
+    // }
+
+    // let num = [2, 6, 1, 7, 4];
+    // let sum = 0;
+    // for (let i = 0; i < num.length; i++) {
+    //   sum += num[i];
+    // }
+    // document.write(sum);
+    // document.write('<br>')
+    // document.write(sum / num.length);
+
+
+
+    let arr = [2, 6, 1, 7, 4];
+    let max = arr[0];
+    let min = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+      max = max > arr[i] ? max : arr[i]
+      min = min < arr[i] ? min : arr[i]
+    }
+    document.write(max);
+    document.write('<br>')
+    document.write(min);
+
+
+    // let arr = [2, 6, 1, 7, 4];
+    // let max = arr[0];
+
+    // for (let i = 1; i < arr.length; i++) {
+    //   if (max > arr[i]){
+    //     max = max;
+    //   }
+    // }
+    // document.write(max);
+
+
+
+
+  </script>
+</body>
+
+</html>

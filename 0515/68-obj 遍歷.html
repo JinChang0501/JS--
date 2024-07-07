@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      margin: 0 auto;
+    }
+
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+
+    <script>
+      let students = [
+
+        { name: 'Jin', age: 18, gender: 'male' },
+        { name: 'John', age: 78, gender: 'female' },
+        { name: 'Jack', age: 88, gender: 'female' },
+        { name: 'Juan', age: 20, gender: 'male' },
+      ]
+
+
+      for (let k in students) {
+        // console.log(students[k]['name']);
+        document.write(`  
+            <tr>
+            <td>${parseInt(k) + 1}</td>
+            <td>${students[k]['name']}</td>
+            <td>${students[k]['age']}</td>
+            <td>${students[k]['gender']}</td>
+            </tr>
+
+            `)
+
+      }
+    </script>
+  </table>
+
+
+
+  <script>
+
+
+
+
+    // let students = [
+
+    //   { name: 'Jin', age: 18, gender: 'male' },
+    //   { name: 'John', age: 78, gender: 'female' },
+    //   { name: 'Jack', age: 88, gender: 'female' },
+    //   { name: 'Juan', age: 20, gender: 'male' },
+    // ]
+
+
+    // for (let k in students) {
+    //   console.log(students[k]['name']);
+
+
+    //   document.write(`
+
+    // <tr>
+    //   <td>${parseInt(k) + 1}</td>
+    //   <td>${students[k]['name']}</td>
+    //   <td>${students[k]['age']}</td>
+    //   <td>${students[k]['gender']}</td>
+    // </tr>
+
+    // `)
+
+    // }
+
+
+  </script>
+</body>
+
+</html>

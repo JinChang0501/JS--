@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+</head>
+
+<body>
+
+
+  <script>
+
+    // function getMax(a, b) {
+    //   return a > b ? a : b
+    // }
+
+    // let max = getMax(20, 50)
+    // document.write(max);
+    // document.write('<br>');
+
+
+    // //隨機函數取max
+    // function getMax2(arr) {
+    //   let max2 = arr[0];
+    //   for (let i = 1; i < arr.length; i++) {
+    //     if (max2 < arr[i]) {
+    //       max2 = arr[i]
+    //     }
+    //   }
+    //   return max2
+    // }
+
+    // let max2 = getMax2([2, 55, 88, 95, 199, 2, 3, 5, 6, 100])
+    // document.write(max2);
+
+
+
+
+    (function (a, b) {
+      console.log(a + b)
+    })(5, 6);
+
+
+
+
+
+    let totalSec = +prompt('輸入秒數');
+    let second = +parseInt(totalSec % 60);
+    let minutes = +parseInt(totalSec / 60 % 60);
+    let hour = +parseInt(totalSec / 60 / 60 % 24);
+
+
+    function getTime(totalSec) {
+      if (second < 10) {
+        second = '0' + second;
+      }
+      if (minutes < 10) {
+        minutes = '0' + minutes;
+      }
+      if (hour < 10) {
+        hour = '0' + hour;
+      }
+      return `${totalSec}轉換後時間為${hour}時${minutes}分${second}秒`;
+    }
+    let str = getTime(totalSec);
+    document.write(str);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let sum = 5000;
+    while (true) {
+      let comment = prompt(`要幹嘛? 
+      1存錢 
+      2取錢 
+      3查詢餘額 
+      4取消`);
+
+      if (comment === "1") {
+        let add = +prompt('輸入存款金額:')
+        sum += add;
+        alert(`存款餘額為${sum}`)
+
+      } else if (comment === "2") {
+        let min = +prompt('輸入取款金額:')
+        if (sum < min) {
+          alert('存款不足')
+        } else {
+          sum -= min;
+          alert(`存款餘額為${sum}`)
+        };
+      } else if (comment === "3") {
+        alert(`存款餘額為${sum}`)
+      } else {
+        break
+      };
+    }
+  </script>
+</body>
+
+</html>

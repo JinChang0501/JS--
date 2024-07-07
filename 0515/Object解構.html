@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const pig = [{ name: '佩琪', age: 18 }]
+
+    const [{ name: uname, age }] = pig;
+
+    console.log(uname)
+
+
+
+    const goods = [{
+      goodsName: '小米',
+      price: 1999
+    }]
+
+    const [{ goodsName, price }] = goods
+    console.log(goodsName)
+    console.log(price)
+
+
+
+
+    const pig2 = {
+      name: '佩琪2',
+      family: {
+        mother: '豬媽媽',
+        father: '豬爸爸',
+        sister: '喬治'
+      },
+      age: 22
+    }
+
+
+    const { name, family: { mother, father, sister }, age: age2 } = pig2;
+    console.log(name)
+    console.log(mother)
+    console.log(father)
+    console.log(sister)
+    console.log(age2)
+
+
+
+
+
+
+
+
+
+
+
+    const obj = {
+      uname: 'Jin',
+      age: 18,
+      gender: 'Male'
+    }
+
+
+    // const arr = [
+    //   {
+    //     uname: 'Jin',
+    //     age: 18,
+    //     gender: 'Male'
+    //   },
+    //   {
+    //     uname: 'Juan',
+    //     age: 99,
+    //     gender: 'Male'
+    //   },
+    //   {
+    //     uname: 'Jack',
+    //     age: 22,
+    //     gender: 'Female'
+    //   }
+    // ]
+    // console.log(arr[0].uname)
+
+
+    // for (let k in arr) {
+    //   console.log(arr[k].uname)
+    // }
+
+
+  </script>
+</body>
+
+</html>

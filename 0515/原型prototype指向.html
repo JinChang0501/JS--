@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //構造函數
+    //構造函數裡面都有自動內建prototype,constructor
+    function Star(uname) {
+      this.name = uname
+    }
+
+    //實例
+    const ldh = new Star('劉德華');
+
+
+    console.log(Star.prototype.constructor === Star);
+
+
+    //對象原型->原型對象Star.prototype
+
+    console.log(ldh.__proto__ === Star.prototype);
+
+    //對象原型constructor->構造Star
+    console.log(ldh.__proto__.constructor === Star);
+
+
+
+
+
+    const Person = {
+      eye: 20,
+      head: 1
+    }
+
+
+    function Man() {
+
+    }
+
+
+    Man.prototype = Person
+    Man.prototype.constructor = Man
+
+    const jin = new Man('Jin')
+    console.log(jin.eye);
+
+
+    // const arr = [99, 2, 3, 4, 5]
+
+    Array.prototype.max = function (arr) {
+      return Math.max(...this) //解構函數變成1 2 3 -> 這樣子就可以用Math進行求最大值 2.原型函數裡面的this指向 => 實力對象
+    }
+    // console.log(arr.max());
+
+
+
+
+
+  </script>
+</body>
+
+</html>
