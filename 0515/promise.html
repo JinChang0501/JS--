@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Promise範例
+
+      let sendToAirport = false;
+
+      let p = new Promise((resolve, reject) => {
+        if (sendToAirport) {
+          console.log("成功");
+          resolve();
+        } else {
+          console.log("失敗");
+          reject();
+        }
+      });
+
+      p.then(() => {
+        console.log("執行完Promise後執行我");
+      }).catch(() => {
+        console.log("Promise Reject");
+      });
+
+      let f = fetch("http://jsonlplaceholder.typicode.com/users");
+      f.then((userData) => {
+        return userData.json;
+      }).then((jsonData) => {
+        console.log(jsonData);
+      });
+    </script>
+  </body>
+</html>
